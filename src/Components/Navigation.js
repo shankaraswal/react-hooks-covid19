@@ -20,7 +20,22 @@ export class Navigation extends Component {
                 <Link
                   className='nav-item nav-link text-light'
                   to='/summary'>
-                  Summary
+                  List
+                </Link>
+                <Link
+                  className='nav-item nav-link text-light'
+                  to='/auto'>
+                  List+Search Class
+                </Link>
+                <Link
+                  className='nav-item nav-link text-light'
+                  to='/ahooks'>
+                  List+Search Hooks
+                </Link>
+                <Link
+                  className='nav-item nav-link text-light'
+                  to='/custom'>
+                  Custom Hooks
                 </Link>
               </nav>
             </div>

@@ -9,6 +9,9 @@ import {
 import Navigation from "./Components/Navigation";
 import Home from "./Components/Home";
 import Summary from "./Components/Summary";
+import AutoComplete from "./Components/AutoComplete";
+import { CustomHook } from "./Components/CustomHook";
+import { AutoCompleteHooks } from "./Components/AutoCompleteHooks";
 
 function App() {
   return (
@@ -17,8 +20,11 @@ function App() {
         <Navigation />
         <div className='container'>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route path='/custom' component={CustomHook} />
             <Route path='/summary' component={Summary} />
+            <Route path='/auto' component={AutoComplete} />
+            <Route path='/ahooks' component={AutoCompleteHooks} />
+            <Route exact path='/' component={Home} />
           </Switch>
         </div>
       </Router>

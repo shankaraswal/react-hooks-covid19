@@ -23,9 +23,9 @@ const Summary = () => {
   }, []);
   return (
     <>
-      <p className='mt-3 mb-3'>Summary </p>
+      <h4 className='mt-3 mb-3'>Summary: using react hooks </h4>
       <div className='summary'>
-        <table class='table table-striped border border-warning'>
+        <table className='table table-striped border border-warning'>
           <thead>
             <tr className='bg-warning text-light'>
               <th>Country</th>
